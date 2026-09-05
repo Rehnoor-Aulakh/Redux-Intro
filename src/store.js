@@ -1,15 +1,7 @@
 import { combineReducers, createStore } from "redux";
-import accountReducer, {
-  withdraw,
-  deposit,
-  payLoan,
-  requestLoan,
-} from "./features/accounts/accountSlice";
+import accountReducer from "./features/accounts/accountSlice";
 
-import customerReducer, {
-  updateName,
-  createCustomer,
-} from "./features/customers/customerSlice";
+import customerReducer from "./features/customers/customerSlice";
 
 const rootReducer = combineReducers({
   account: accountReducer,
